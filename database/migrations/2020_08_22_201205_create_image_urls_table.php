@@ -13,7 +13,7 @@ class CreateImageUrlsTable extends Migration
      */
     public function up()
     {
-        Schema::create('imageurls', function (Blueprint $table) {
+        Schema::create('image_urls', function (Blueprint $table) {
             $table->id();
             $table->text('imageURL');
             $table->foreignId('location_id')->references('id')->on('locations');
@@ -28,6 +28,6 @@ class CreateImageUrlsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('imageurls');
+        Schema::dropIfExists('image_urls');
     }
 }

@@ -12,6 +12,6 @@ class Location extends Model
 
     public function imageurls()
     {
-        return $this->hasMany('App\ImageURL');
+        return $this->hasMany('App\ImageUrl');
     }
 }

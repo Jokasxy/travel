@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ImageURL extends Model
+class ImageUrl extends Model
 {
     protected $fillable = [
         'imageURL', 'location_id',
