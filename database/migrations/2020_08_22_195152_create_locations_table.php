@@ -20,7 +20,6 @@ class CreateLocationsTable extends Migration
             $table->text('description');
             $table->decimal('latitude', 8, 6);
             $table->decimal('longitude', 8, 5);
-            $table->timestamps();
         });
     }
 

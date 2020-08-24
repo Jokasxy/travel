@@ -17,7 +17,6 @@ class CreateImageUrlsTable extends Migration
             $table->id();
             $table->text('imageURL');
             $table->foreignId('location_id')->references('id')->on('locations');
-            $table->timestamps();
         });
     }
 
